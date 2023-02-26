@@ -26,5 +26,14 @@ pipeline{
 	         
 	       }
         }
+        stage('Git Checkout SCM'){
+            steps{
+                script{
+                    git credentialsId: 'gitops-ci',
+                    url: 'https://github.com/avatareleniyan1/gitops-ci.git',
+                    branch: 'main'
+                }
+            }
+        }
     }
 }
