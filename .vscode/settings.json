@@ -1,0 +1,17 @@
+{
+    "jenkins-runner.jobs": {
+        "gitop": {
+            "isDefault": true,
+            "runWith": "jenkins-master",
+            "name": "gitops-ci",
+        }
+    },
+    "jenkins-runner.hostConfigs": {
+        "jenkins-master": {
+            "url": "http://10.0.0.247:8080",
+            "user": "admin",
+            "password": "Securebios###",
+            "useCrumbIssuer": true,
+        }
+    }
+}
