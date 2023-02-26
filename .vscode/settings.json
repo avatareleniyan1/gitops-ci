@@ -1,6 +1,6 @@
 {
     "jenkins-runner.jobs": {
-        "gitop": {
+        "gitops-ci": {
             "isDefault": true,
             "runWith": "jenkins-master",
             "name": "gitops-ci",
