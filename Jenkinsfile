@@ -19,7 +19,7 @@ pipeline{
 		    steps {
                 script{
                     sh 'rm trufflesecurity/trufflehog:latest || true'
-                    sh 'docker run --rm -t -v "$PWD:/pwd" trufflesecurity/trufflehog:latest github --repo https://github.com/avatareleniyan1/gitop-ci.git --debug > trufflehog'
+                    sh 'docker run --rm -t -v "$PWD:/pwd" trufflesecurity/trufflehog:latest github --repo https://github.com/avatareleniyan1/gitops-ci.git --debug > trufflehog'
 		            sh 'cat trufflehog'
 
                }
